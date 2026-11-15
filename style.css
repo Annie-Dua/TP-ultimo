@@ -1,0 +1,158 @@
+
+body {
+    background-color: #20242b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffcb05;
+    font-size: 42px;
+    text-shadow: 3px 3px #3466af;
+}
+
+h2 {
+    color: #ffcb05;
+    margin-top: 30px;
+}
+
+.pokemones {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.pokemon {
+    background-color: #303944;
+    padding: 25px;
+    border: 2px solid #526477;
+    border-radius: 15px;
+    width: 180px;
+}
+
+.pokemon img {
+    width: 140px;
+    height: 140px;
+    image-rendering: pixelated;
+}
+
+.pokemon h3 {
+    color: #ffcb05;
+    font-size: 22px;
+}
+
+button {
+    background-color: #3466af;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #5288d5;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.pokemon-batalla {
+    background-color: #303944;
+    border: 2px solid #526477;
+    border-radius: 15px;
+    padding: 20px;
+    width: 240px;
+}
+
+.pokemon-batalla img {
+    width: 160px;
+    height: 160px;
+    image-rendering: pixelated;
+}
+
+.pokemon-batalla h3 {
+    color: #ffcb05;
+    font-size: 23px;
+}
+
+.pokemon-batalla p {
+    font-size: 15px;
+}
+
+.barra {
+    width: 100%;
+    height: 16px;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra div {
+    height: 100%;
+    width: 100%;
+    background-color: #35c759;
+}
+
+#mensaje {
+    min-height: 30px;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+#ataques {
+    margin-top: 20px;
+}
+
+#ataque1, #ataque2 {
+    min-width: 140px;
+    font-weight: bold;
+}
+
+#botonReiniciar {
+    background-color: #d64b35;
+}
+
+#botonReiniciar:hover {
+    background-color: #f16a50;
+}
+
+#statsJugador, #statsRival {
+    color: #b9c9dc;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .campo {
+        gap: 20px;
+    }
+
+    .pokemon-batalla {
+        width: 220px;
+    }
+
+    .pokemones {
+        gap: 15px;
+    }
+
+}

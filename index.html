@@ -1,12 +1,144 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <h1>POKEMON BATTLE</h1>
+
+    <!-- SELECCION DE POKEMON -->
+
+    <div id="seleccion">
+
+        <h2>Elegí tu Pokémon</h2>
+
+        <div class="pokemones">
+
+            <div class="pokemon">
+
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png">
+
+                <h3>Squirtle</h3>
+
+                <button onclick="elegirPokemon('Squirtle')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="pokemon">
+
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+
+                <h3>Bulbasaur</h3>
+
+                <button onclick="elegirPokemon('Bulbasaur')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="pokemon">
+
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png">
+
+                <h3>Charmander</h3>
+
+                <button onclick="elegirPokemon('Charmander')">
+                    Elegir
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BATALLA -->
+
+    <div id="batalla" style="display: none;">
+
+        <h2>¡Comienza la batalla!</h2>
+
+        <div class="campo">
+
+            <!-- POKEMON DEL JUGADOR -->
+
+            <div class="pokemon-batalla">
+
+                <h3 id="nombreJugador"></h3>
+
+                <img id="imagenJugador">
+
+                <p>Vida: <span id="vidaJugador">100%</span></p>
+
+                <div class="barra">
+                    <div id="barraJugador"></div>
+                </div>
+
+                <p id="statsJugador"></p>
+
+            </div>
+
+
+            <!-- POKEMON RIVAL -->
+
+            <div class="pokemon-batalla">
+
+                <h3 id="nombreRival"></h3>
+
+                <img id="imagenRival">
+
+                <p>Vida: <span id="vidaRival">100%</span></p>
+
+                <div class="barra">
+                    <div id="barraRival"></div>
+                </div>
+
+                <p id="statsRival"></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENSAJES -->
+
+        <h2 id="mensaje">¿Qué vas a hacer?</h2>
+
+
+        <!-- ATAQUES DEL JUGADOR -->
+
+        <div id="ataques">
+
+            <button id="ataque1" onclick="jugarTurno(0)"></button>
+
+            <button id="ataque2" onclick="jugarTurno(1)"></button>
+
+        </div>
+
+
+        <!-- REINICIAR -->
+
+        <br><br>
+
+        <button id="botonReiniciar" onclick="reiniciar()" style="display: none;">
+            Volver a jugar
+        </button>
+
+    </div>
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
